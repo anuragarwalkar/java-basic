@@ -1,3 +1,4 @@
+package src;
 class Calc {
     int num1;
     int num2;

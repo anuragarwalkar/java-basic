@@ -1,3 +1,4 @@
+package src;
 public class ArrayDemo {
    public static void main(String[] args) {
     int items[] = {8, 12, 76, 54};

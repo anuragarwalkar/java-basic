@@ -1,3 +1,4 @@
+package src;
 class Emp {
     int eid;
     int salary;

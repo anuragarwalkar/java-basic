@@ -1,4 +1,4 @@
-public class Main {
+public class Basic {
     public static void main(String atgs[])
     {
      int k = (int)5.6;

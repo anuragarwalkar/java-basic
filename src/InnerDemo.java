@@ -1,3 +1,4 @@
+package src;
 class Outer {
     int a;
 
@@ -12,10 +13,6 @@ class Outer {
     }
 }
 
-
-
-package src;
-package src;
 public class InnerDemo {
 
     public static void main(String[] args) {

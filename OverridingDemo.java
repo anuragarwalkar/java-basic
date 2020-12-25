@@ -10,6 +10,16 @@ class B extends A{
     public void show() {
         System.out.println("In B");
     }
+
+    public void config() {
+        System.out.println("In Config");
+    }
+}
+
+class C extends A {
+    public void show() {
+        System.out.println("In C");
+    }
 }
 
 public class OverridingDemo {

@@ -12,6 +12,24 @@ interface Abc {
     void abc();
 }
 
+interface Demo {
+    public void show();
+}
+
+interface MyDemo {
+    public void show();
+}
+
+class DemoImp implements Demo, MyDemo {
+    public void abc() {
+        System.out.println("In ABC");
+    }
+
+    public void show() {
+        System.out.println("In demo implment show");
+    }
+}
+
 public class InterfaceDemo {
     
     public static void main(String[] args) {

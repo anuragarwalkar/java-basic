@@ -21,7 +21,7 @@ class CalcVeryAdv extends CalcAdv {
 }
 
 public class InheritanceDemo {
-   public static void main(String args[]) {
+   public static void main(String[] args) {
         CalcAdv calc = new CalcAdv();
         int result = calc.add(2, 3);
         int subtractRsult = calc.substract(2, 3);

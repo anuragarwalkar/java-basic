@@ -1,14 +1,22 @@
 package src;
 
-class Calculator {
+// IS-A, HAS-A
+
+class Calculator { // Super, Parent, base
     public int add(int i, int j) {
         return (i + j);
     }
 }
 
-class CalcAdv extends Calculator {
+class CalcAdv extends Calculator { // Sub, Child, Child, Derived
     public int substract(int i, int j) {
         return (i - j);
+    }
+}
+
+class CalcVeryAdv extends CalcAdv {
+    public int multi(int i, int j) {
+        return (i* j);
     }
 }
 
@@ -18,6 +26,6 @@ public class InheritanceDemo {
         int result = calc.add(2, 3);
         int subtractRsult = calc.substract(2, 3);
 
-        System.out.println(subtractRsult);
+        System.out.println(subtractRsult + result);
    } 
 }

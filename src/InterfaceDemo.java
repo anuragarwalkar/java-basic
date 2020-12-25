@@ -2,11 +2,14 @@ package src;
 
 // Type of interface
 // Single abstract method - Functional Interface - Lambda Expression - scala
-// Marker interface
+// Marker interface (Dont have any method serializable)
 
-@FunctionalInterface
+@FunctionalInterface // only one abstract method/*  */
 interface Abc {
-    void show();
+    default void show() {
+        System.out.println("In show");
+    }
+    void abc();
 }
 
 public class InterfaceDemo {

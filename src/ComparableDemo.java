@@ -1,15 +1,17 @@
 package src;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-class Stud {
+class Stud implements Comparable<Stud> {
     int rollNumber;
     int marks;
     String name;
 
 
     public Stud(int rollNumber, String name, int marks) {
+        super();
         this.rollNumber = rollNumber;
         this.name = name;
         this.marks = marks;
@@ -20,6 +22,10 @@ class Stud {
         return "Stud [marks=" + marks + ", name=" + name + ", rollNumber=" + rollNumber + "]";
     }
 
+    
+    public int compareTo(Stud s) {
+        return rollNumber > s.rollNumber ? -1 : 1;
+    }
     
 }
 
@@ -32,6 +38,8 @@ public class ComparableDemo {
 
         studs.add(new Stud(1, "Anurag", 100));
         studs.add(new Stud(2, "Vaishali", 60));
+
+        Collections.sort(studs);
 
 
        for(Stud s: studs) {

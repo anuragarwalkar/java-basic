@@ -1,4 +1,4 @@
-package src.com.demo.basic.variables;
+package src.com.demo.basic.primitive.variables;
 
 public class CharDemo {
     public static void main(String[] args) {

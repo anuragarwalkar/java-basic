@@ -1,4 +1,4 @@
-package src;
+package src.com.demo.basic;
 
 abstract class Human {
     public abstract void eat();
@@ -6,18 +6,15 @@ abstract class Human {
     public abstract void walk();
 }
 
-
 class Man extends Human {
     public void eat() {
 
     }
 
     public void walk() {
-        
+
     }
 }
-
-
 
 public class AbstractDemo {
     public static void main(String[] args) {

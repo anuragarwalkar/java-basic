@@ -1,4 +1,5 @@
-package src;
+package src.com.demo.basic;
+
 class Outer {
     int a;
 
@@ -19,7 +20,7 @@ public class InnerDemo {
         Outer obj = new Outer();
 
         Outer.Inner obj1 = new Outer.Inner();
-        
+
         obj1.display();
-    }  
+    }
 }

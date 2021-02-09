@@ -1,4 +1,5 @@
-package src;
+package src.com.demo.basic;
+
 class Emp {
     int eid;
     int salary;

@@ -1,4 +1,4 @@
-package src;
+package src.com.demo.basic;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,7 +15,7 @@ public class setDemo {
         values.add(0);
         values.add(89);
 
-        for(int i : values) {
+        for (int i : values) {
             System.out.println(i);
         }
     }

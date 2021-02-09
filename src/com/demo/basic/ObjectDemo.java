@@ -1,4 +1,5 @@
-package src;
+package src.com.demo.basic;
+
 class Calc {
     int num1;
     int num2;
@@ -6,9 +7,9 @@ class Calc {
     int result;
 
     public Calc() {
-       num1 = 1; 
+        num1 = 1;
 
-       System.out.println("Plain Anurag");
+        System.out.println("Plain Anurag");
     }
 
     public Calc(int n) {
@@ -26,12 +27,10 @@ class Calc {
     }
 }
 
-
 public class ObjectDemo {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Calc obj = new Calc();
-        
+
         System.out.println(obj.num1);
     }
 }

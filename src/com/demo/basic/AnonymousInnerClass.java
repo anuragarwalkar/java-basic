@@ -1,8 +1,10 @@
-package src;
+package src.com.demo.basic;
+
 class AClass {
     public void showMain() {
         System.out.println("Syso...");
     }
+
     public void show() {
         System.out.println("In A Show");
     }

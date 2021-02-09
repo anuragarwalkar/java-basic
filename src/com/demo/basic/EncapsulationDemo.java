@@ -1,4 +1,5 @@
-package src;
+package src.com.demo.basic;
+
 // Encapsulation => Binding data with methods
 class Student {
     private int rollno;
@@ -11,7 +12,6 @@ class Student {
     public int getRollNumber() {
         return this.rollno;
     }
-
 
 }
 

@@ -1,4 +1,4 @@
-package src;
+package src.com.demo.basic;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,6 @@ class Stud implements Comparable<Stud> {
     int rollNumber;
     int marks;
     String name;
-
 
     public Stud(int rollNumber, String name, int marks) {
         super();
@@ -22,16 +21,14 @@ class Stud implements Comparable<Stud> {
         return "Stud [marks=" + marks + ", name=" + name + ", rollNumber=" + rollNumber + "]";
     }
 
-    
     public int compareTo(Stud s) {
         return rollNumber > s.rollNumber ? -1 : 1;
     }
-    
+
 }
 
-
 public class ComparableDemo {
-    
+
     public static void main(String[] args) {
 
         List<Stud> studs = new ArrayList();
@@ -41,11 +38,10 @@ public class ComparableDemo {
 
         Collections.sort(studs);
 
+        for (Stud s : studs) {
+            System.out.println(s);
+        }
 
-       for(Stud s: studs) {
-           System.out.println(s);
-       }
-        
     }
 
 }

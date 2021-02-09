@@ -1,23 +1,23 @@
-package src;
+package src.com.demo.basic;
 
 class MyThread extends Thread {
-    int[] values = {6, 5, 1, 7, 8};
+    int[] values = { 6, 5, 1, 7, 8 };
 
     public void run() {
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             values[i] = values[i] * 2;
         }
     }
 }
 
-class Hi extends Thread{
+class Hi extends Thread {
     public void run() {
         for (int i = 0; i < 5; i++) {
             System.out.println("Hi" + Thread.currentThread().getPriority());
             try {
                 Thread.sleep(1000);
             } catch (Exception e) {
-                //TODO: handle exception
+                // TODO: handle exception
             }
         }
     }
@@ -31,13 +31,14 @@ class Hello extends Thread {
             try {
                 Thread.sleep(1000);
             } catch (Exception e) {
-                //TODO: handle exception
+                // TODO: handle exception
             }
         }
     }
 }
+
 public class MultiThreadingDemo {
-    
+
     public static void main(String[] args) throws Exception {
         // MyThread t1 = new MyThread();
         // t1.start();
@@ -52,19 +53,18 @@ public class MultiThreadingDemo {
 
         obj.setPriority(Thread.MIN_PRIORITY);
 
-        System.out.println(obj.getPriority()); 
+        System.out.println(obj.getPriority());
 
         System.out.println(obj.isAlive()); // check if is alive
 
-        obj.join(); // wait 
+        obj.join(); // wait
         obj2.join(); // wait
 
-        System.out.println("Bye"); // main thread 
-
+        System.out.println("Bye"); // main thread
 
         // obj.show();
         // obj2.show();
 
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package src;
+package src.com.demo.basic;
 
 public class WrapperDemo {
     public static void main(String[] args) {
